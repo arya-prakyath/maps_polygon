@@ -61,6 +61,7 @@ function initMap() {
         { lat: 13.093120417329533, lng: 77.65878380995095 },
         { lat: 13.107833465681772, lng: 77.61483849745095 },
     ]
+    // Draw on Map
     new google.maps.Polygon({
         map: map,
         paths: bangalore,
@@ -103,6 +104,27 @@ function initMap() {
     new google.maps.Polygon({
         map: map,
         paths: hyderabad,
+        fillColor: "#fff",
+        fillOpacity: 0.3,
+        strokeColor: "#000",
+        strokeWeight: 3,
+    });
+
+    let managlore = [
+        { lat: 12.909812970807238, lng: 74.81162134322048 },
+        { lat: 12.95130544925035, lng: 74.82466760786892 },
+        { lat: 12.94327518554241, lng: 74.90500513228298 },
+        { lat: 12.896426829901701, lng: 74.92972437056423 },
+        { lat: 12.85894182786607, lng: 74.92491785200954 },
+        { lat: 12.821451226726671, lng: 74.8734194389236 },
+        { lat: 12.799355935303476, lng: 74.87479272993923 },
+        { lat: 12.79600799491592, lng: 74.85831323775173 },
+        { lat: 12.793329610614288, lng: 74.84870020064236 },
+        { lat: 12.854925245289744, lng: 74.81917444380642 },
+    ]
+    new google.maps.Polygon({
+        map: map,
+        paths: managlore,
         fillColor: "#fff",
         fillOpacity: 0.3,
         strokeColor: "#000",
